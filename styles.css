@@ -35,6 +35,22 @@ h1{
     line-height: 1.25;
 }
 
+.container{
+    padding: 80px 0px;
+}
+
+h5{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 0.83em;
+    max-width: 300px;
+}
+
+.section_sub{
+    margin-bottom: 16px;
+}
 
 /* NAV  */
 
@@ -170,8 +186,12 @@ nav{
     width: 100%;
     font-weight: 500;
     line-height: 1.55;
-    color: rgba(36,62,99);
     font-size: 100%;
+}
+
+.description__input--email::placeholder{
+    color: rgba(160,174,192);
+    opacity: 1;
 }
 
 .description__input--email:focus{
@@ -198,8 +218,7 @@ nav{
     border-radius: 9999px;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    border: none
-    height: 100%;
+    border: none;
     font-size: 100%;
     
 }
@@ -227,7 +246,7 @@ nav{
     font-size: 0.75rem;
     letter-spacing: 0.05em;
     font-weight: 700;
-    color: rgba(160,174,192)
+    color: rgba(160,174,192);
 }
 
 .description__trust--image-wrapper{
@@ -238,4 +257,13 @@ nav{
 .description__trust--image{
     width: 100%;
     opacity: 0.5;
+}
+
+/* FEATURES */
+
+.features__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

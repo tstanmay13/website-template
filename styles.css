@@ -40,7 +40,7 @@ h1{
 }
 
 .container{
-    padding: 200px 0px;
+    padding-top: 200px;
 }
 
 h5{
@@ -71,6 +71,14 @@ h2{
 
 .align-center{
     text-align: center;
+}
+
+.align-left{
+    text-align: left;
+}
+
+button{
+    cursor: pointer;
 }
 
 /* NAV  */
@@ -333,4 +341,44 @@ nav{
     font-weight: 500;
     line-height: 2;
     color: rgba(124,139,161);
+}
+
+/* QUALITY WORK */
+
+.quality{
+    display: flex;
+}
+
+.quality__description{
+    padding-top: 32px;
+    width: 50%;
+    margin-right: 64px;
+}
+
+.quality__image--wrapper{
+    width: 50%;
+
+}
+
+.quality__image{
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+
+}
+
+.hundered{
+    max-width: 100%;
+}
+
+.learn-more{
+    background-color: rgba(100,21,255);
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    padding: 12px 32px;
+    margin-top: 32px;
 }

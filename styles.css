@@ -24,14 +24,16 @@ li{
 }
 .row{
     width: 100%;
-    max-width: 1350px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0px 16px;
+    /* padding: 0px 16px; */
 }
 
 .row-features{
     max-width: 1024px;
 }
+
+
 
 h1{
     font-size: 3em;
@@ -51,6 +53,12 @@ h5{
     font-size: 1em;
     max-width: 300px;
     margin-bottom: 16px;
+}
+
+h6{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(36,62,99)
 }
 
 h2{
@@ -85,6 +93,7 @@ button{
 
 
 nav{
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -171,7 +180,7 @@ nav{
 .description{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 41.6667%;
     padding-top: 28px;
 }
 
@@ -257,7 +266,7 @@ nav{
 }
 
 .main__image--wrapper{
-    width: 60%;
+    width: calc(100%- 41.6667%);
     max-width: 747px;
 }
 
@@ -381,4 +390,58 @@ nav{
     border-radius: 9999px;
     padding: 12px 32px;
     margin-top: 32px;
+}
+
+/* STEPS*/
+
+.steps{
+    display: flex;
+}
+
+.steps__image--wrapper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps__image{
+    width: 100%;
+}
+
+.steps__description{
+    margin-left: 64px;
+    padding: 32px 0px;
+}
+
+.steps__list{
+    margin-top: 48px;
+}
+
+.steps__item{
+    display: flex;
+}
+
+.steps__item:not(:first-child){
+    margin-top: 32px;
+}
+
+
+.steps__item--number{
+    font-weight: 600px;
+    font-size: 2.25rem;
+    line-height: 1;
+    color: rgba(203,213,224)
+}
+
+.steps__item--description{
+    margin-left: 24px;
+    max-width: 320px;
+}
+
+.steps__item--para{
+    margin-top: 12px;
+    line-height: 2;
+    font-size: 0.875rem;
+    color: rgba(113,128,150);
 }

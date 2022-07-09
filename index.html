@@ -8,6 +8,7 @@
     <title>Website Template</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/10a73d7bfa.js" crossorigin="anonymous"></script>
+    <script src=./index.js></script>
 </head>
 
 <body>
@@ -15,23 +16,44 @@
         <div class="row">
             <nav>
                 <!-- logo -->
-                <a href="htpps://tanmaysingh.net">
-                    <div class="logo">
-                        <figure class="logo__image--wrapper">
+                <div class="nav__container">
+                    <a href="htpps://tanmaysingh.net">
+                        <div class="logo">
+                            <figure class="logo__image--wrapper">
 
-                            <img class="logo__image" src="./assets/logo.svg" alt="">
-                        </figure>
-                        <span class="logo__name"> Treact</span>
-                    </div>
-                </a>
-                <ul class="nav__link--list">
-                    <li class="nav__link--item "> <a href="" class="nav__link"> About </a></li>
-                    <li class="nav__link--item "> <a href="" class="nav__link"> Blog </a></li>
-                    <li class="nav__link--item "> <a href="" class="nav__link"> Pricing </a></li>
-                    <li class="nav__link--item extra-padding"> <a href="" class="nav__link"> Contact Us </a></li>
-                    <li class="nav__link--item "> <a href="" class="nav__link"> Login </a></li>
-                    <li class="nav__link--item "> <a href="" class="nav__link--item--border"> Sign Up </a></li>
-                </ul>
+                                <img class="logo__image" src="./assets/logo.svg" alt="">
+                            </figure>
+                            <span class="logo__name"> Treact</span>
+                        </div>
+                    </a>
+                    <ul class="nav__link--list">
+                        <li class="nav__link--item "> <a href="" class="nav__link"> About </a></li>
+                        <li class="nav__link--item "> <a href="" class="nav__link"> Blog </a></li>
+                        <li class="nav__link--item "> <a href="" class="nav__link"> Pricing </a></li>
+                        <li class="nav__link--item extra-padding"> <a href="" class="nav__link"> Contact Us </a></li>
+                        <li class="nav__link--item "> <a href="" class="nav__link"> Login </a></li>
+                        <li class="nav__link--item "> <a href="" class="nav__link--item--border"> Sign Up </a></li>
+                    </ul>
+
+                    <button class="button__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="menu__backdrop">
+                    <button class="button__menu button__menu--close" onclick="closeMenu()"><i
+                            class="fas fa-times"></i></button>
+
+                    <ul class="menu__links">
+                        <li class="menu__list"><a href="" class="menu__link nav__link " onclick="closeMenu()">About</a></li>
+                        <li class="menu__list"><a href="" class="menu__link nav__link " onclick="closeMenu()">Blog</a></li>
+                        <li class="menu__list"><a href="" class="menu__link nav__link " onclick="closeMenu()">Pricing</a></li>
+                        <li class="menu__list"><a href="" class="menu__link nav__link" onclick="closeMenu()">Contact Us</a></li>
+                        <li class="menu__list"><a href="" class="menu__link nav__link" onclick="closeMenu()">Login</a></li>
+                        <li class="menu__list"> <a href="" class="menu__sign nav__link--item--border"> Sign Up </a></li>
+                    </ul>
+                </div>
+
+
             </nav>
         </div>
 
@@ -498,7 +520,7 @@
                         <h5 class="footer--small"><span class="white"> MAIN</span></h5>
                         <ul class="list">
                             <li class="list__item">Blog</li>
-                            <li class="list__item">FAQs</li> 
+                            <li class="list__item">FAQs</li>
                             <li class="list__item">Support</li>
                             <li class="list__item">About Us</li>
                         </ul>

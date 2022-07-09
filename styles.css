@@ -220,9 +220,13 @@ nav,
   right: 24px;
 }
 
+.menu__list--button{
+  /* margin-top: 1rem; */
+  padding-top: 1rem;
+}
 .menu__sign{
   font-size: 1.125rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
   padding: 1rem 2.25rem;
 }
@@ -233,7 +237,7 @@ nav,
 }
 
 .menu--open .menu__backdrop{
-  max-height: 25vh;
+  max-height: fit-content;
   visibility: visible;
   opacity: 1;
 }
